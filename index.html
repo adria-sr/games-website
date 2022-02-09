@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Adrià Soubias Rabassa">
+  <title>Adrià Soubias Rabassa - Online game space</title>
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="img\favicon180.png" sizes="180x180">
+  <link rel="icon" href="img\favicon32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="img\favicon16.png" sizes="16x16" type="image/png">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+  </style>
+
+  <!-- Bootstrap CDN CSS+JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/ibm-plex.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/global.css">
+
+  <!-- JS -->
+  <script src="js/global.js"></script>
+
+
+</head>
+
+<body class="bg-black" style="">
+  <!-- Header -->
+  <header class="text-white bg-black fixed-top">
+    <nav class="navbar ms-4">
+      <div class="container-fluid ms-1">
+        <div class="d-flex">
+          <a href="index.html" class="navbar-brand my-auto"> Adrià Soubias Rabassa</a>
+        </div>
+        <div class="d-flex flex-row-reverse nav-item">
+          <svg onclick="openNav()" class="svg-menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <div class="row g-0">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-auto">
+          <div class="m-3">
+            <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
+            <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
+          </div>
+          <div class="m-3">
+            <h5><a href="contact.html"><i>Mentions légales</i></a></h5>
+            <h5><a href="archive.html"><i>Archives</i></a></h5>
+          </div>
+          <div class="m-3" style="position: fixed; bottom: 0px;">
+            <p class="jost">© Adrià SOUBIAS RABASSA vBETA1.0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page -->
+  <div class="container-fluid text-center text-white" style="margin-top: 100px">
+    <h1><a href="#projets" class="huge">A</a></h1>
+  </div>
+  <!-- Main -->
+  <main class="">
+    <div id="projets" style="height:60px;">
+
+    </div>
+    <div class="container-fluid px-4">
+      <div class="row g-0">
+
+
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-espacesensible.jpg);">
+          <a href="projet-espace-presentation.html">
+            <span class="link-spanner"></span>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2><a href="projet-espace-presentation.html">Espace sensible</a></h2>
+          <ul>
+            <li>Installation</li>
+            <li>Mapping</li>
+            <li>Web/Imprimé</li>
+          </ul>
+        </div>
+
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-mer-new.jpg);">
+          <!--   <div class="marquee3k" data-speed="3">
+            <a href="projet-carnet-partie1.html">
+              <span class="link-spanner"></span>
+              <h1 class="thumbnail-text">Carnetsd'été</h1>
+            </a>
+          </div> -->
+          <a href="projet-carnet-ete.html">
+            <span class="link-spanner"></span>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2><a href="projet-carnet-ete.html">Carnets d'été</a></h2>
+          <ul>
+            <li>Pratique personnelle</li>
+            <li>Carnet de voyage</li>
+            <li>Photographie</li>
+            <li>Edition web</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-stenopes.jpg); background-color: #000;">
+          <a href="projet-stenope.html">
+            <span class="link-spanner"></span>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2 class="m-0"><a href="projet-stenope.html">Sténopés</a></h2>
+          <ul>
+            <li>Expérimentation</li>
+            <li>Argentique</li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-micro.jpg);">
+          <a href="projet-micro.html">
+            <span class="link-spanner"></span>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2 class="m-0"><a href="projet-micro.html">Micro édition</a></h2>
+          <ul>
+            <li>Print</li>
+            <li>Tout petit format</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-8 text-black bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-rome.jpg); background-size : contain; background-color: #FFF;">
+          <a href="projet-mafonte.html">
+            <span class="link-spanner"></span>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2 class="m-0"><a href="projet-mafonte.html">Calligraphie/typographie</a></h2>
+          <ul>
+            <li>Projet en cours de réalisation</li>
+          </ul>
+        </div>
+
+        <div class="col-md-8 text-black m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-muriers.jpg); background-size : contain; background-color: #FFF;">
+          <a href="projet-muriers.html">
+            <span class="link-spanner"></span>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2 class="m-0"><a href="projet-muriers.html">Les Mûriers</a></h2>
+          <ul>
+            <li>Identité visuelle</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-music.jpg); background-size: contain; background-color: #e2d2a9;">
+          <a href="projet-pakistani.html">
+            <span class="link-spanner"></span>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2 class="m-0"><a href="projet-pakistani.html">Pakistani</a></h2>
+          <ul>
+            <li>Motion Design</li>
+            <li>Calligraphie</li>
+            <li>3D</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-8 text-whitebg-image p-4 m-3 thumbnail border border-white align-self-end" style="background-image: url(img/thumbnail-bike.jpg); background-position: 63%;">
+          <a href="projet-bike-pictures.html">
+            <span class="link-spanner"></span>
+            <h4 class="thumbnail"><a href="projet-bike-pictures.html"></a></h4>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2 class="m-0">Photographie</h2>
+          <ul>
+            <li>Photographie numérique</li>
+          </ul>
+        </div>
+
+        <!-- PARTIE A COMPLETER
+        <div class="col-md-8 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-rouille.jpg);">
+          <a href="">
+            <span class="link-spanner"></span>
+            <h4 class="thumbnail"></h4>
+          </a>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <h2 class="m-0">Gravure et rouille</h2>
+          <ul>
+            <li>Gravure</li>
+            <li>Tirage sur papier</li>
+          </ul>
+        </div> -->
+
+        <!--
+        <div class="col-lg-3 text-white bg-image p-4 m-3 thumbnail " style="background-image: url(img/thumbnail-gravure.jpg);">
+
+          <span class="link-spanner"></span>
+          <h4 class="avara-black">Gravure</h4>
+
+        </div> -->
+
+        <!--
+        <div class="col-lg-6 text-black bg-image p-4 m-3 thumbnail-disabled" style="background-image: url(img/thumbnail-bus.jpg);">
+
+          <span class="link-spanner"></span>
+          <h4 class="avara-black">Photographie sensible</h4>
+
+        </div>-->
+
+        <!-- BAROMÈTRE
+        <div class="col-lg-3 text-black bg-image p-4 m-3 thumbnail-disabled" style="background-image: url(img/thumbnail-bvm.jpg);">
+
+          <span class="link-spanner"></span>
+          <h4 class="avara-black">Flyer Baromètre des villes marchables</h4>
+
+        </div>-->
+      </div>
+    </div>
+
+  </main>
+
+  <div class="" style="height: 20vh;">
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white">
+    <div class="container-fluid mt-4 p-0">
+      <div class="marquee3k m-0 p-0" data-speed="2" data-pausable="yes">
+        <p class="avara tonique">en recherche de stage</p>
+      </div>
+      <div class="marquee3k m-0 p-0" data-speed="3" data-reverse="false" data-pausable="yes">
+        <a href="contact.html">
+          <h1 style="font-size: 12em;"><i>Contact</i></h1>
+        </a>
+      </div>
+      <div class="marquee3k m-0 p-0" data-speed="1.5" data-pausable="yes">
+        <h1><a href="contact.html#mentions-legales"><i>Mentions légales</i></a></h1>
+      </div>
+      <div class="text-center">
+        <div class="" style="height: 10vh;"> </div>
+        <div class="row g-0">
+          <div class="col-6">
+          </div>
+        </div>
+      </div>
+      <div class="" style="height: 10vh;"></div>
+      <div class="text-center">
+        <p> <a href="https://github.com/adria-sr">
+
+            <>
+
+          </a> by adrià soubias rabassa <br> ce site web est composé en <a href="https://www.velvetyne.fr/fonts/avara/">Avara</a>, dessinée
+          par Raphaël Bastide + Lucas Le Bihan + Wei Huang + Walid Bouchouchi <br> ainsi qu'en <a href="https://www.ibm.com/plex/"><b class="jost">IBM Plex</b></a> dessinée par la team d'IBM Design.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="js/marquee3k.js"></script>
+<script type="text/javascript">
+  $('a').click(function() {
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 1000);
+    return false;
+  });
+</script>
+
+</html>
