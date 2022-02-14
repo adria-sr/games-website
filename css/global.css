@@ -12,12 +12,6 @@
   --muriers: #611747;
 }
 
-#unity-canvas {
-  width: 95vw;
-  height: 90vh;
-  margin-top: 5vh;
-}
-
 @font-face {
   font-family: 'Avara_Bold';
   src: url('font/avara/bold/Avara-Bold.eot');
