@@ -207,6 +207,14 @@ a:hover {
   color: var(--tonique);
 }
 
+svg {
+  fill: #FFFFFF;
+}
+
+a.svg:hover {
+  fill: var(--tonique);
+}
+
 .menu-icon {
   -webkit-animation: alert 2s linear 0s infinite normal;
   -moz-animation: alert 2s linear 0s infinite normal;
@@ -241,31 +249,16 @@ a:hover {
 .thumbnail {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale();
   background-size: cover;
-  height: 60vh;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .thumbnail:hover {
   filter: none;
-}
-
-.thumbnail-disabled {
-  position: relative;
-  overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-  cursor: not-allowed;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 .thumbnail-text {
