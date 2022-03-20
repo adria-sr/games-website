@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Adrià Soubias Rabassa">
-
-  <title>Trouvez le moyen de partir avec le téléphérique !</title>
+  <title>Jouez à projet atelier 2</title>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="..\..\img\favicon180.png" sizes="180x180">
@@ -25,38 +24,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <!-- My CSS -->
-  <link rel="stylesheet" href="../../css/ibm-plex.css">
-  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="css/ibm-plex.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/global.css">
 
+  <!-- JS -->
+  <script src="js/global.js"></script>
 </head>
 
-<body style="text-align: center; height: 100vh">
-  <canvas id="unity-canvas" style=" background: #000000"></canvas>
-  <script src="Build/build.loader.js"></script>
+<body style="text-align: center; background-color: black;">
+  <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #000000"></canvas>
+  <script src="Build/webBuilds.loader.js"></script>
   <script>
-    //initial js
     createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "Build/build.data.gz",
-      frameworkUrl: "Build/build.framework.js.gz",
-      codeUrl: "Build/build.wasm.gz",
+      dataUrl: "Build/webBuilds.data.gz",
+      frameworkUrl: "Build/webBuilds.framework.js.gz",
+      codeUrl: "Build/webBuilds.wasm.gz",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "games.adria-soubias.fr",
-      productName: "escape-game",
-      productVersion: "v1.0expoburo",
+      companyName: "By Adrià Soubias Rabassa",
+      productName: "projet-atelier2-web",
+      productVersion: "0.1",
       // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
       // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
     });
-
-    //added js
-    function activerFullscreen() {
-      unityInstance.SetFullscreen(1);
-    }
-
-    let hauteurFenetre = innerHeight;
-    let largeurFenetre = innerWidth;
-    const fenetreJeu = document.getElementById("unity-canvas")
-    fenetreJeu.height = hauteurFenetre;
-    fenetreJeu.width = largeurFenetre;
   </script>
 </body>
 
